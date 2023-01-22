@@ -1,0 +1,40 @@
+[global_config]
+  title_transmit_bg_color = "#2777ff"
+  title_receive_bg_color = "#d41919"
+  title_inactive_fg_color = "#ffffff"
+  title_inactive_bg_color = "#23252e"
+  always_split_with_profile = True
+[keybindings]
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_4 = <Alt>4
+  switch_to_tab_5 = <Alt>5
+  switch_to_tab_6 = <Alt>6
+  switch_to_tab_7 = <Alt>7
+  switch_to_tab_8 = <Alt>8
+  switch_to_tab_9 = <Alt>9
+  switch_to_tab_10 = <Alt>0
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    font = Hack NF Bold 10
+    use_system_font = False
+  [[custom]]
+    background_darkness = 0.95
+    cursor_color = "#aaaaaa"
+    palette = "#1f2229:#d41919:#5ebdab:#fea44c:#367bf0:#9755b3:#49aee6:#e6e6e6:#198388:#ec0101:#47d4b9:#ff8a18:#277fff:#962ac3:#05a1f7:#ffffff"
+    login_shell = True
+    use_custom_command = True
+    custom_command = /usr/bin/zsh
+    use_theme_colors = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = custom
+[plugins]
